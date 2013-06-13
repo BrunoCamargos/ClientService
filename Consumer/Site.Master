@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Consumer.SiteMaster" %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %></title>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <script src="Scripts/jquery-1.10.1.js" type="text/javascript"></script>
+    <script src="Scripts/jquery.json-2.4.js" type="text/javascript"></script>
+    <script src="Scripts/ClientServiceConsumer.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder runat="server" ID="ContentPlaceHolder1" />
+</head>
+<body>
+    <form id="Form1" runat="server">
+
+        <div id="body">
+            <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        </div>
+    </form>
+</body>
+</html>
