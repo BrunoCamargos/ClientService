@@ -11,7 +11,7 @@ namespace BO
 	{
 		public Client()
 		{
-			this.AddValidator(new ValidateEmail("Email", "O E-mail informado não é válido."));
+			this.AddValidator(new ValidateEmail("Email", "O E-mail não é válido."));
 			this.AddValidator(new ValidateDate("DataNascimento", "A Data de Nascimento não é válida."));
 		}
 
